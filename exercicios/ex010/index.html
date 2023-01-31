@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu
+        <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Para criar essa referência hipertexto onde eu posso clicar e ele leva ao site, você envelopa a frase que quer com ctrl=shift=p e coloca a tag a, e dentro das aspas do href coloca a url</p>
+    <p>Você também pode acessar o meu
+        <a href=" https://youtube.com/cursoemvideo/ ">canal gratuito no YouTube</a>
+    </p>
+    <p>Para que o site que abrir com o link não sobreponha o seu e abra em outra página, logo após as aspas do link você coloca as seguintes tags target="_blank " e rel="external "</p>
+    <h1>Praticando sozinha com links aleatórios</h1>
+    <p>Vamos tentar com o instagram</p>
+    <p>Acessando esse link você vai até o meu <a href="https://www.instagram.com/" target="_blank" rel="external">instagram</a></p>
+    <P>Deu certo Parabéns Lilica</P>
+    <h2>Usando links internos</h2>
+    <p>Está é a primeira página o site. Se você quiser, pode acessar também a minha
+        <a href="pag002.html" rel="next">segunda página</a>
+    </p>
+    <p>A segunda página tem que estar criada na mesma pasta da primeira, ai em href é só dar ctrol+espaço que já aparece a opção para inserir</p>
+    <p>Na página principal a primeira logo após as aspas do link que vai para segunda página você coloca um rel="next" indicando que depois dela vai para a segunda <br>E na segunda página depois do link coloca um rel="prev" indicando que volta para primeira.
+        Na parte estética não muda nada, isso é um mecanismo para o google saber que elas se ligam</p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <p>quando a página estiver dentro de uma segunda pasta dentro da pasta original, dentro do href você usa o atalho crtrl+espaço e clica na pasta para achar a página e não dar erro</p>
+    <p>Quando você quiser que não abra a página em outra janela, quando o usuário clicar, ou vc deixa sem nada ou coloca a tag target="_self"</p>
+    <h1>Links para Dowloads</h1>
+    <ul>
+        <li>
+            <a href="livro/10 - Ligações em toda parte.pdf" type="appication/pdf">Baixar o livro em PDF</a>
+        </li>
+
+        <li>
+
+            <a href="livro/10 - Ligações em toda parte.rar" type="application/zip">Livro compactado em zip</a>
+        </li>
+    </ul>
+    <p>Para que ele não somente abra em outra janela, mas também baixe o arquivo você coloca o type="application/pdf" ou se for zip o type="appication/zip"</p>
+</body>
+
+</html>

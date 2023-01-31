@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <ul>
+        <li>
+            Quando você precisa que a imagem abra em vários tamanhos diferentes, vc cria elas no gimp com os tamanhos, coloca dentro da mesma pasta e abre a tag picture dentro dessa tag coloca a tag img com a imagem maior.
+        </li>
+        <li>Em cima da tag img com a imagem maior, coloca a tag source media type colocando em max-width: e com o pixel da imagem maior sempre com 50px a mais (se a imagem for de 1000px vc coloca 1050px) em srcset vc escreve o nome do arquivo, lembrando que
+            tem que colocar a pasta que ele está na frente antes da barra, em type lembrar de colocar o png depois da barra.</li>
+        <li>O source com a imagem menor sempre a cima da imagem maior. Senão da erro, não funciona.</li>
+        <li>É muito importante fazer isso, para que o usuário do site tenha melhor navegação e não desista do seu site.</li>
+    </ul>
+    <h1>Testando uma Imagem Sozinha</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="cachorro/cachorro-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="cachorro/cachorro-m.png" type="image/png">
+        <img src="cachorro/lindo-retrato-de-cachorro.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/gustavolima.mp3" controls autoplay></audio>
+    <p>Essa é uma forma de colocar o áudio, mas pode ser que em alguns navegadores não funcione.</p>
+    <audio preload="metadata" autoplay controls loop>
+       <source src="midia/icefire.mp3" type="audio/mpeg"> 
+       <source src="midia/icefire.ogg" type="audio/ogg">
+       <source src="midia/icefire.wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir áudio
+        <a href="midia/icefire.mp3">clique aqui para baixar o arquivo mp3</a>
+    </p>
+    <p>A ordem é muito importante, ele sempre vai tentar carregar primeiro o arquivo que está em cima, caso não consiga ele vai tentando de cima pra baixo.</p>
+    <p>A tag autoplay é para quando abrir o site já começa a tocar o áudio. A tag controls é para que quando o usuário apertar no botão de play o áudio começe a tocar ou pare. A tag loop é para tocar o áudio em loop, começando denovo sempre que acabar.</p>
+    <p>Tentar sempre evitar os arquivos wav, pois são arquivos muito pesados.</p>
+</body>
+
+</html>

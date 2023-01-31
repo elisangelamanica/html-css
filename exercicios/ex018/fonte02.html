@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url('fontes/love story ttf.ttf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            /*Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat(Apple Advanced Typography)
+            - svg
+            */
+            /*tem que estar com o mesmo nome que está na pasta,os mesmos espaços e entre aspas.*/
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            font-family: 'love';
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nemo eaque a necessitatibus reprehenderit beatae neque debitis animi amet nesciunt recusandae numquam officia, quidem id corrupti eos inventore. Hic, inventore!</p>
+</body>
+
+</html>

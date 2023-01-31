@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Sempre bom colocar dessa forma, pra não ter problema de abrir em qualquer dispositivo. Se vc colocar serif=ele vai colocar a fonte que quiser com serifa, sans-serif=vai colocar a fonte que ele quiser sem serifa, monospace=vai colocar a fonte que quiser monoespaçada.*/
+            font-size: 1em;
+            font-weight: bolder;
+            /*colocar em negrito*/
+            font-style: italic;
+            /*colocar em itálico*/
+            text-decoration: underline;
+            /*sublinhar*/
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            A recomendação da W3C é que se use o px e o em
+            16px geralmente é igual a 1em
+            */
+        }
+        
+        h1 {
+            font: normal bolder 3em 'work sans'
+            /* font-family: 'work sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: normal;
+            shorthand font = é juntar todas as configurações de fonte, mas tem que ser na seguinte ordem:
+            - font-style -> font-weight -> font-size -> font-family
+            */
+        }
+        
+        h2 {
+            font: bold 2em 'work sans'
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sint quo possimus odit tempora vel similique? Vel assumenda porro, eaque amet, voluptatem fuga earum exercitationem ea itaque, culpa inventore obcaecati?Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Quaerat nihil alias, hic impedit distinctio quod adipisci aspernatur voluptatum amet tenetur fugit? Sequi non error dolorum modi tenetur a facere. Quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laudantium
+        asperiores quos nobis ipsa iste vitae! Magni laudantium sed, excepturi consequuntur amet deleniti culpa soluta dicta repellendus, odit vitae dignissimos!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et voluptatem aperiam enim asperiores non odit ipsa nemo. Quasi quo minus nobis architecto, in magnam illum, enim consequatur est, libero tenetur.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minus quo reiciendis saepe ad error beatae. Ratione, id, eum veritatis cumque totam doloremque nobis dolores placeat, temporibus natus magnam expedita!</p>
+</body>
+
+</html>

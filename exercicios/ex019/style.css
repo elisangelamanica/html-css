@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*em HTML é id = em CSS é #
+em HTML é class = em CSS é .*/
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+
+/*tudo que você mudar dentro do id=principal só muda nele, não nos outros h1*/
+
+h2 {
+    color: rgb(34, 75, 32);
+}
+
+.basico {
+    color: green;
+    font-weight: bold;
+}
+
+
+/*Eu coloco só o .basico sem o h2 na frente, para se eu precisar colocar qualquer outra parte do documento com a mesma configuração, eu poder usar o class=basico sem problemas, assim não fica ligado só ao h2.*/
+
+.intermediario {
+    color: rgb(187, 187, 9);
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: rgba(141, 141, 28, 0.589);
+}
+
+
+/*Prestar atenção na hierarquia, primeiro colocamos o h1 depois o #principal id, porque assim o nosso h1 vai herdar a cor que foi designado no começo e sobrepor o que colocamos no h1#principal.*/

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="principal" class="destaque">Criando sites com HTML e CSS</h1>
+    <!--A regra do W3C é: dentro de um mesmo documento só pode usar um id-->
+    <!--Eu consigo usar um id e uma class juntos.-->
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML básico</h2>
+    <!-- Já a class eu posso ter vários elementos com a mesma classe-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repellendus autem, mollitia voluptas doloremque culpa perferendis earum quia ipsum, vel facilis? Veniam non corporis esse laborum sequi, doloribus ex voluptatibus.</p>
+    <h2 class="intermediario">HTML intermediário</h2>
+    <p>Lorem ipsum dolor sit amet, <span class="basico">consectetur adipisicing elit</span>.
+        <!--a tag span é para selecionar uma parte do texto, colocando a class=basico essa parte do texto vai ficar com a mesma configuração de todos os outros class=basico. Para isso lá no style.css eu coloco só .basico sem o h2 na frente-->Veniam iusto est amet repellat unde, ad error repudiandae perferendis saepe excepturi praesentium? Quidem perspiciatis nesciunt voluptatum animi ad? Amet, repellat ipsum.
+    </p>
+    <h2 class="avancado">HTML avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam fuga dolor expedita omnis iure rerum animi nihil cumque facilis repellat voluptatem, ullam, voluptates officia voluptatum! Eaque error rerum alias.</p>
+    <h1 class="destaque">Aprendendo CSS</h1>
+    <h2 class="basico">Css básico</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus velit rerum a perferendis hic, dolores sunt? Voluptate totam quia laudantium sed ullam repellendus quibusdam perferendis facere? Adipisci rerum error quibusdam!</p>
+    <h2 class="intermediario">CSS intermediário</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium ad aliquam ipsa quibusdam, rem earum doloribus esse? Odio repudiandae enim reprehenderit reiciendis aspernatur voluptate incidunt repellat. Dolore aliquid saepe consequatur.</p>
+    <h2 class="avancado destaque">CSS avançado</h2>
+    <!--Eu consigo colocar duas class no mesmo elemento, só escrever uma do lado da outra, sem espaço nem virgula.-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eligendi molestias facilis laudantium consequatur nisi. Totam, tenetur, error autem repudiandae similique mollitia, ipsam libero illum soluta voluptatum non rerum! Animi.</p>
+</body>
+
+</html>

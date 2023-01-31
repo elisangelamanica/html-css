@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>acordar</li>
+        <li>ligar para joão</li>
+        <li>tomar café</li>
+        <li>escovar os dentes</li>
+    </ol>
+    <p>Para fazer uma lista ordenada coloca a tag ol e dentro dela cada item da lista fica dentro da tag li, a partir da versão HTML5 o barra li (/li) se tornou opçional</p>
+    <p>Você pode colocar dentro da tag ol o type para escolher como vai aparecer na frente da lista : "1" fica numerado, "i" fica em romanos "a" fica em ordem alfabética</p>
+    <ol type="a">
+        <li>acordar</li>
+        <li>tomar café</li>
+        <li>escovar dentes</li>
+        <li>fazer exercicios</li>
+    </ol>
+    <ol type="I">
+        <li>acordar</li>
+        <li>tomar café</li>
+        <li>escovar os dentes</li>
+        <li>fazer exercicios</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <ul>
+        <li>pão</li>
+        <li>leite</li>
+        <li>alface</li>
+        <li>tomate</li>
+    </ul>
+    <p>Na opção em type das listas não ordenadas vc tem a opção de 'disc': que é o padrão, a opção 'circle' e a opção 'square'</p>
+    <ul type="circle">
+        <li>pão</li>
+        <li>leite</li>
+        <li>alface</li>
+    </ul>
+    <p>Você coloca type e sinal de igual e dentro das aspas escreve a opção que quer!</p>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <p>Para inserir uma lista dentro de outra lista é só adicionar outra tag ol e fazer a nova lista dentro dessa tag nova</p>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>Termo - HTML</dt>
+        <dd>Descrição - Linguagem de marcação para a criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+
+</body>
+
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            color: red;
+            text-decoration: none;
+            /*tira o sublinhado*/
+            font-weight: bold;
+        }
+        
+        a:visited {
+            color: darkred;
+        }
+        /*quando a pessoa já visitou aquele link, ele muda de cor , de red normal para darkred*/
+        
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        /*no hover passando o mouse por cima, faz ficar sublinhado (text-decoration:underline) e preto(color:black)*/
+        
+        a:active {
+            color: yellow;
+        }
+        /*quando o link é clicado ele fica amarelo*/
+        
+        .especial {
+            background-color: rgb(201, 135, 135);
+        }
+        
+        .especial::before {
+            content: '⇛';
+        }
+        
+        .especial::after {
+            content: '⇚';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        /* A palavra link colocamos como pseudo-elemento, que aparece depois do link*/
+        /* : = representa pseudo-classe e :: = representa pseudo-elemento*/
+        /* SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+        */
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" class="especial">Repositório GitHub</a></li>
+        <!--target=_blank para abrir o link em uma nova janela.-->
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do YouTube</a></li>
+        <!--Posso colocar uma classe para que apenas um ou quantos eu escolher sejam especial-->
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+
+</html>
