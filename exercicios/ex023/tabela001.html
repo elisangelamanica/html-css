@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse; /*unir as bordas*/
+        }
+
+        tr.linha {
+            background-color: lightgray;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;/*alinhamento horizontal*/
+            vertical-align: middle; /*alinhamento vertical*/
+        }
+        td.numero { /*para alinhar o conteudo da celula pro lado que quiser*/
+            text-align: right;
+        }
+        td.dado {
+            background-color: rgb(199, 199, 62);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr class="linha"> <!-- linha da tabela-->
+            <td>A1</td><!--dados da tabela-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr class="linha">
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+            
+        </tr>
+    </table>
+    <!-- tag table para limitar a tabela
+    
+    HIERARQUIA DE TABELAS (simples)
+    TABLE = tabelas
+        TABLE BOX = linha de tabela
+            TABLE HEADER = cabeçalho de tabela
+            TABLE DATA = dado de tabela
+-->
+<!-- Para o W3C o fechamento das tags tr e td é opcional, mas é bom deixar fechado-->
+</body>
+</html>
